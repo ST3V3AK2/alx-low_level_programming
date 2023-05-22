@@ -15,7 +15,7 @@ int main(void)
 
 	for (n = 0; i < 10; i++)
 	{
-		for(i = 0; i < 10; i++)
+		for (i = 0; i < 10; i++)
 		{
 			if (n < i)
 			{
