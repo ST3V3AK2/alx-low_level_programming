@@ -13,7 +13,7 @@ int main(void)
 	int n;
 	int i;
 
-	for (n = 0; i < 10; i++)
+	for (n = 0; n < 10; n++)
 	{
 		for (i = 0; i < 10; i++)
 		{
@@ -21,11 +21,11 @@ int main(void)
 			{
 				putchar('0' + n);
 				putchar('0' + i);
-			}
-			if ((n + i) > 17)
-			{
-				putchar(',');
-				putchar(' ');
+				if ((n + i) < 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}

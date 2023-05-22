@@ -15,22 +15,22 @@ int main(void)
 	int i;
 	int l;
 
-	for (n = 0; i < 10; n++)
+	for (n = 0; n < 10; n++)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			for (l = 0; i < 10; l++)
+			for (l = 0; l < 10; l++)
 			{
-				if (n < i)
+				if (n < l && i < l && n < i)
 				{
 					putchar('0' + n);
 					putchar('0' + i);
 					putchar('0' + l);
-				}
-				if ((n + i + l) < 24)
-				{
-					putchar(',');
-					putchar(' ');
+					if ((n + i + l) < 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
