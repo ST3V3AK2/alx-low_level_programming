@@ -4,7 +4,7 @@
  * main - prints num from 1 to 100 butt replaces multiples of
  * 3, 5 and 15 with Fizz, Buzz amd FizzBuzz respectively
  *
- * Return: voif
+ * Return: Always 0.
  */
 
 int main(void)
@@ -25,4 +25,5 @@ int main(void)
 			putchar(' ');
 	}
 	putchar('\n');
+	return (0);
 }
