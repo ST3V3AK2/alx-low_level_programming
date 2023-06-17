@@ -9,10 +9,17 @@
 
 void _puts_recursion(char *s)
 {
-	int size = sizeof(s) - 1;
+    if (!(*s))
+    {
+        _putchar('\n');
+        return;
+    }
+	_putchar(*s[1]);
+	_puts_recursion(s + 1);
+}
 
-	if ()
-		_putchar('\n');
-	_putchar(*s);
-	_puts_recursion(*(s + 1));
+int main(void)
+{
+    _puts_recursion("Puts with recursion");
+    return(0);
 }
