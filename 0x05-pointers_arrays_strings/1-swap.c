@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * swap_int - swaps two intgers
+ * @a: pointer to first number
+ * @b: pointer to second number
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
-int main(void)
+void swap_int(int *a, int *b)
 {
-	
+	int temp;
+
+	temp = a;
+	a = b;
+	b = temp;
 }
