@@ -1,10 +1,13 @@
-#ifndef HEADER
-#define HEADER
+#ifndef HEADER_D
+#define HEADER_D
 
-struct dog
+typedef struct dog
 {
     char *name;
     char *owner;
     float age;
-};
+}dog_t;
+
+struct dog dog_t;
+
 #endif
