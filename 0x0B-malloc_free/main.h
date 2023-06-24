@@ -1,6 +1,8 @@
-#include <unistd.h>
-#ifndef PROTOTYPES
-#define PROTOTYPES
+#ifndef HEADER_MALLOC
+#define HEADER_MALLOC
+
+#define <unistd.h>
+#define <stdlib.h>
 
 int _putchar(char c);
 char *create_array(unsigned int size, char c);
