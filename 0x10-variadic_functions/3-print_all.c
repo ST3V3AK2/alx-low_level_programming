@@ -10,35 +10,35 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char *str;
+	void *str;
 	int n = sizeof(format) - 1;
 	int i = 0;
 
 	if (format == NULL)
 		return;
 
-	va_start(args);
+	va_start(args, format);
 	while(i < n)
 	{
 		switch (format[i])
 		{
 			case 'c':
-				str = va_arg(format, char);
+				(char)str = va_arg(args, char);
 				printf("%c", str);
 				break;
 
 			case 'i':
-				str = va_arg(format, int);
+				(int)str = va_arg(args, int);
 				printf("%d", str);
 				break;
 
 			case 'f':
-				str = va_arg(format, float;
+				(float)str = va_arg(args, float);
 				printf("%f", str);
 				break;
 
 			case 's':
-				str = va_arg(format, char *);
+				(char *)str = va_arg(args, char *);
 				if (str == NULL)
 					printf("(nil)")
 				printf("%s", str);
@@ -50,7 +50,7 @@ void print_all(const char * const format, ...)
 
 		}
 		if (i < n - 1)
-			printf("%s", seperator);
+			printf("%s", separator);
 		i++;
 	}
 	_putchar('\n');

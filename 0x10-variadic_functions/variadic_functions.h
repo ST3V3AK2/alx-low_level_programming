@@ -1,9 +1,9 @@
 #ifndef HEADER_V
 #define HEADER_V
 
-#define <stdlib.h>
-#define <stdarg.h>
-#define <unistd.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);

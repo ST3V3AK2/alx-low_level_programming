@@ -1,11 +1,11 @@
-#include "main.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - executes a function on each element of an array
  * @array: pointer to input array
  * @size: pointer to siz of the  input array
  * @action: input function
- * 
+ *
  * Return: void
 */
 

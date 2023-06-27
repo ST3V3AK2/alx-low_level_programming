@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "3-calc.h"
 
 /**
  * main - Test code
