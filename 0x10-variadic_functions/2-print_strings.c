@@ -8,7 +8,7 @@
  * Return: void.
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	char *str;
