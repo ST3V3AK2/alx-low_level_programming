@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	if (!format)
 	{
-		print("\n");
+		printf("\n");
 		return;
 	}
 	while (format[i])
