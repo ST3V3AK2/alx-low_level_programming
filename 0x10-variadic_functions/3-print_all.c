@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(args, char *);
 				if (str == NULL)
-					printf("(nil)")
+					printf("(nil)");
 				printf("%s", str);
 				break;
 
@@ -50,8 +50,6 @@ void print_all(const char * const format, ...)
 				break;
 
 		}
-		if (i < n - 1)
-			printf("%s", separator);
 		i++;
 	}
 	_putchar('\n');
