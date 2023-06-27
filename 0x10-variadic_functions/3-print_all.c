@@ -15,9 +15,14 @@ void print_all(const char * const format, ...)
 	int i = 0, num;
 
 	va_start(args, format);
-	while(format[i])
+	if (!format)
 	{
-		switch(format[i])
+		print("\n");
+		return;
+	}
+	while (format[i])
+	{
+		switch (format[i])
 		{
 			case 'c':
 				c = va_arg(args, int);
