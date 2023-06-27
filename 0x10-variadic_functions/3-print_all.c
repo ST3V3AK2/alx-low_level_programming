@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char c, *str, *sep = "";
 	double f;
-	int i = 0, num, j;
+	int i = 0, num;
 
 	va_start(args, format);
 	while(format[i])
@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(args, char *);
 				if (str == NULL)
 					printf("(nil)");
-				printf("%s%s", sp, str);
+				printf("%s%s", sep, str);
 				break;
 			default:
 				i++;
