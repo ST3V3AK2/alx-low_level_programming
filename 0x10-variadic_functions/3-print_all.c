@@ -23,22 +23,22 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				str = va_arg(n, char);
+				str = va_arg(format, char);
 				printf("%c", str);
 				break;
 
 			case 'i':
-				str = va_arg(n, int);
+				str = va_arg(format, int);
 				printf("%d", str);
 				break;
 
 			case 'f':
-				str = va_arg(n, float;
+				str = va_arg(format, float;
 				printf("%f", str);
 				break;
 
 			case 's':
-				str = va_arg(n, char *);
+				str = va_arg(format, char *);
 				if (str == NULL)
 					printf("(nil)")
 				printf("%s", str);
