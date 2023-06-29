@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * is_sqrt - checks if input has a natural squraeroot
@@ -10,11 +11,11 @@
 
 int is_sqrt(int n, int i)
 {
-	if (n == i * i && i > 1)
-		return (i);
-	else if (i > n / 2)
+	if (i * i > n)
 		return (-1);
-	is_sqrt(n, i + 1);
+	if (i * i == n)
+		return (i);
+	return (is_sqrt(n, i + 1));
 }
 
 /**
@@ -26,5 +27,7 @@ int is_sqrt(int n, int i)
 
 int _sqrt_recursion(int n)
 {
+	if (n < 0)
+		return (-1);
 	return (is_sqrt(n, 1));
 }
