@@ -2,7 +2,7 @@
 
 /**
  * free_list - frees a linked list of type list_t
- * @h: linked list
+ * @head: linked list
  *
  * Return: void.
  */
