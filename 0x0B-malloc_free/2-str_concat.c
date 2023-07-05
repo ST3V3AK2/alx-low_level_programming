@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 			j++;
 			continue;
 		}
-		str[i] == s1[j];
+		str[i] = s1[j];
 		j++;
 	}
 
@@ -42,9 +42,9 @@ char *str_concat(char *s1, char *s2)
 			j++;
 			continue;
 		}
-		str[i] == s2[j];
+		str[i] = s2[j];
 		j++;
 	}
-	str[i] == '\0';
+	str[i] = '\0';
 	return (str);
 }
