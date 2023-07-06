@@ -10,8 +10,6 @@
 
 void free_dog(dog_t *d)
 {
-	int i;
-
 	free(d->name);
 	free(d->owner);
 	free(d);

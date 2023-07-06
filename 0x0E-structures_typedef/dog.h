@@ -1,6 +1,10 @@
 #ifndef HEADER_D
 #define HEADER_D
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+
 /**
  * struct dog - registers a dog
  * @name: Dog's name
