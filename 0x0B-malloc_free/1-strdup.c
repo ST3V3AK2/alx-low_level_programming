@@ -16,7 +16,10 @@ char *_strdup(char *str)
 	size = strlen(str) + 1;
 	str_cp = malloc(size);
 	if (str_cp == NULL || str == NULL)
+	{
+		write(1, "failed to allocate memory\n", 27);
 		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 		str_cp[i] = str[i];
 	return (str_cp);
