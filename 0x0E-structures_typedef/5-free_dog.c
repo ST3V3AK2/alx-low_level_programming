@@ -12,9 +12,7 @@ void free_dog(dog_t *d)
 {
 	int i;
 
-	for (i = 0; i < sizeof(d->name); i++)
-		free(d->name[i]);
-	for (i = 0; i < sizeof(d->owner); i++)
-		free(d->owner[i]);
+	free(d->name);
+	free(d->owner);
 	free(d);
 }
