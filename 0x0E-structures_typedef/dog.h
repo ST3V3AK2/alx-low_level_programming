@@ -8,6 +8,4 @@ typedef struct dog
     float age;
 }dog_t;
 
-struct dog dog_t;
-
 #endif
