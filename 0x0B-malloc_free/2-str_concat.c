@@ -20,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 
 	i = 0;
 	j = 0;
-	while (s[j])
+	while (s1[j])
 	{
 		str[i] = s1[j];
 		i++;
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	j = 0;
-	while (s[j])
+	while (s2[j])
 	{
 		str[i] = s2[j];
 		i++;
