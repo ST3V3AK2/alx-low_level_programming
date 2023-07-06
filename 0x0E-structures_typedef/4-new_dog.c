@@ -20,8 +20,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog1 = malloc(sizeof(struct dog));
 	if (dog1 == NULL)
 		return (NULL);
-	dog1->name = name;
+	dog1->name = name_copy;
 	dog1->age = age;
-	dog1->owner = owner;
+	dog1->owner = owner_copy;
 	return (dog1);
 }
