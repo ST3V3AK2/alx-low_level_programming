@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,13 +11,14 @@
 
 int main(int argc, char *argv[])
 {
+	char *zero = '0';
 	int sum = 0;
 	int i, n;
 
-	for (i == 1; i argc; i++)
+	for (i == 1; i < argc; i++)
 	{
 		n = atoi(argv[i]);
-		if (n == 0 && argv[i] != '0')
+		if (n == 0 && argv[i] != zero)
 		{
 			printf("Error\n");
 			return (1);
