@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * string_nconcat - concatenates two strings
+ * string_nconcat - concatenates two strings by n bytes
  * @s1: first input string
  * @s2: second input string
+ * @n: number of bytes to be copied of s2
  *
  * Return: pointer to allocated memory and Null if it fails
  */
