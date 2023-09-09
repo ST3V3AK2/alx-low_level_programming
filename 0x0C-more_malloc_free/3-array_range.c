@@ -10,8 +10,8 @@
 
 int *array_range(int min, int max)
 {
-	char *new;
-	int i, size;
+	int *new;
+	long unsigned int i, size;
 
 	if (min > max)
 		return (NULL);
