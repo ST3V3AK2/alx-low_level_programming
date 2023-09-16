@@ -10,11 +10,11 @@
 
 void free_dog(dog_t *d)
 {
-	int i;
-
-	for (i = 0; i < sizeof(d->name); i++)
-		free(d->name[i]);
-	for (i = 0; i < sizeof(d->owner); i++)
-		free(d->owner[i]);
+	if (!d)
+		return;
+	if (d->owner)
+		free(d->owner);
+	if (d->name)
+		free(d->name);
 	free(d);
 }
