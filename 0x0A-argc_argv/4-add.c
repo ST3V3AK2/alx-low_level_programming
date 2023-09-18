@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+	char z[4];
 	int sum = 0;
 	int i, n;
 
@@ -20,7 +21,9 @@ int main(int argc, char *argv[])
 			break;
 
 		n = atoi(argv[i]);
-		if (n == 0 && argv[i] != "0")
+		z = itoa(0, z, DECIMAL);
+		printf("%d", *argv[i]);
+		if (n == 0 && argv[i] != z)
 		{
 			printf("Error\n");
 			return (1);

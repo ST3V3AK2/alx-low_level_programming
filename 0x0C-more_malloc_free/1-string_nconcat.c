@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * string_nconcat - concatenates two strings by n bytes
@@ -25,17 +26,27 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		size = n;
 
-	new = malloc(sizeof(char) * (sizeof(s1) + size));
+	size += sizeof(s1);
+	printf("%ld\n", size);
+	new = malloc(sizeof(char) * size);
 	if (new == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < sizeof(s1) - 1; i++)
+	{
 		new[i] = s1[i];
+		printf("%c\n", new[i]);
+	}
 
-	for (j = 0; j < size; j++)
+	for (j = 0; j < n; j++)
+	{
 		new[i + j] = s2[j];
+		printf("%c, %c\n", new[i + j], s2[j]);
+		i++;
+	}
 
+	printf("%s\n", new);
 	new[i] = '\0';
 	return (new);
 }
