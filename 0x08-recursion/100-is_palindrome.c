@@ -19,7 +19,7 @@ int p_checker(char *s, char *c, int i)
 		return (0);
 	if (len / 2 == i)
 		return (1);
-	return(check_string(*(s + 1), c, i + 1));
+	return(check_string(s + 1, c, i + 1));
 }
 
 /**

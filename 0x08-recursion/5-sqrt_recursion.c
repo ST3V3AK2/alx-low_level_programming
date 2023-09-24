@@ -8,13 +8,13 @@
  * Return: square root of n
  */
 
-int sqrt(int x, int y)
+int _sqrt(int x, int y)
 {
 	if (x  == y * y)
 		return(y);
 	if (x < y * y)
 		return (-1);
-	return(sqrt(n, y + 1));
+	return(_sqrt(n, y + 1));
 }
 
 /**
@@ -28,5 +28,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 1)
 		return (-1);
-	return (sqrt(n, 1));
+	return (_sqrt(n, 1));
 }
