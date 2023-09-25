@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * check_str - checks for a character in a string
@@ -10,13 +8,13 @@
  * on error, -1
  */
 
-int check_str(char *a)
+int check_str(char *str)
 {
-	int i;
+	long unsigned int i;
 
-	for (i = 0; i < strlen(a); i++)
+	for (i = 0; i < strlen(str); i++)
 	{
-		if (a[i] < '0' || a[i] > '9')
+		if (str[i] < '0' || str[i] > '9')
 			return (-1);
 	}
 	return (1);
@@ -42,7 +40,7 @@ int main(int argc, char *argv[])
 
 		num = atoi(argv[i]);
 		a = check_str(argv[i]);
-		if (num == 0 || a == -1 && argv[i][0] != '0')
+		if ((num == 0 && argv[i][0] != '0') || a == -1)
 		{
 			printf("Error\n");
 			return (1);
