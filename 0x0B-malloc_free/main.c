@@ -12,7 +12,7 @@ int main(void)
 {
 	char *buffer;
 
-	buffer = _strdup("ALX SE");
+	buffer = str_concat("Betty ", "Holberton School");
 	if  (buffer == NULL)
 	{
 		printf("failed to allocate memory\n");
