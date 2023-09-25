@@ -9,11 +9,11 @@
  * else, 0
  */
 
-int p_checker(char *s,  int i)
+int p_checker(char *s, int i)
 {
 	int len = strlen(s);
 
-	if (*(s + len / 2) == *(s + i))
+	if (i > len - 1)
 		return (1);
 	if (*s != *(s + len - i))
 		return (0);
