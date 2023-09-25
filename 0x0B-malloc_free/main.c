@@ -8,11 +8,11 @@
  * Return: Always 0.
  */
 
-int main(void)
+int main(int ac, char *av[])
 {
 	char *buffer;
 
-	buffer = str_concat("Betty ", "Holberton School");
+	buffer = argstostr(ac, av);
 	if  (buffer == NULL)
 	{
 		printf("failed to allocate memory\n");

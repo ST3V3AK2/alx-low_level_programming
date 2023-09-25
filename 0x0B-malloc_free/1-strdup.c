@@ -4,7 +4,8 @@
  * _strdup - creates a duplicate of input string
  * @str: input string
  *
- * Return: NULL if string is NULL or if malloc fails, pointer to the array otherwise
+ * Return: on success, pointer to duplicate string
+ * on error, NULL
  */
 
 char *_strdup(char *str)
