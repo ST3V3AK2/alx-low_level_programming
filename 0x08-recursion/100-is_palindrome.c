@@ -13,10 +13,10 @@ int p_checker(char *s,  int i)
 {
 	int len = strlen(s);
 
+	if (*(s + len / 2) == *(s + i))
+		return (1);
 	if (*s != *(s + len - i))
 		return (0);
-	if (len / 2 == i)
-		return (1);
 	return (p_checker(s + 1, i + 1));
 }
 
