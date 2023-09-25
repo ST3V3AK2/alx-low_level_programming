@@ -2,7 +2,7 @@
 
 /**
  * check_str - checks for a character in a string
- * @a: input string
+ * @str: input string
  *
  * Return: on success, 1
  * on error, -1
@@ -10,7 +10,7 @@
 
 int check_str(char *str)
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	for (i = 0; i < strlen(str); i++)
 	{
