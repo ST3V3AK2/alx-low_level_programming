@@ -3,19 +3,17 @@
 /**
  * p_checker - checks if a string is a a palindrome
  * @s: input string
- * @c: character checker
- * @i: counter
+ * @i: index
  *
  * Return: on success, 1
  * else, 0
  */
 
-int p_checker(char *s, char c, int i)
+int p_checker(char *s,  int i)
 {
 	int len = strlen(s);
 
-	c = *(s + len - i);
-	if (*s != c)
+	if (*s != *(s + len - i))
 		return (0);
 	if (len / 2 == i)
 		return (1);
@@ -23,7 +21,7 @@ int p_checker(char *s, char c, int i)
 }
 
 /**
- * is_palindrome - p_checker
+ * is_palindrome - calls p_checker
  * @s: input string
  *
  * Return: on success, 1
@@ -32,11 +30,7 @@ int p_checker(char *s, char c, int i)
 
 int is_palindrome(char *s)
 {
-	char c;
-
 	if (*s == '\0')
 		return (1);
-
-	c = "";
-	return (p_checker(s, c, 1));
+	return (p_checker(s, 1));
 }
