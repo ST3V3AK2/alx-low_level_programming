@@ -10,7 +10,7 @@
  * else, 0
  */
 
-int p_checker(char *s, char *c, int i)
+int p_checker(char *s, char c, int i)
 {
 	int len = strlen(s);
 
@@ -19,7 +19,7 @@ int p_checker(char *s, char *c, int i)
 		return (0);
 	if (len / 2 == i)
 		return (1);
-	return(check_string(s + 1, c, i + 1));
+	return (p_checker(s + 1, c, i + 1));
 }
 
 /**
@@ -29,11 +29,12 @@ int p_checker(char *s, char *c, int i)
  * Return: on success, 1
  * else, 0
  */
+
 int is_palindrome(char *s)
 {
-	char *c;
+	char c = " ";
 
 	if (*s == '\0')
 		return (1);
-	p_checker(s, c, 1);
+	return (p_checker(s, c, 1));
 }

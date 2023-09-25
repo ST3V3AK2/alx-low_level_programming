@@ -10,11 +10,11 @@
 
 int _sqrt(int x, int y)
 {
-	if (x  == y * y)
-		return(y);
+	if (x == y * y)
+		return (y);
 	if (x < y * y)
 		return (-1);
-	return(_sqrt(n, y + 1));
+	return (_sqrt(x, y + 1));
 }
 
 /**
