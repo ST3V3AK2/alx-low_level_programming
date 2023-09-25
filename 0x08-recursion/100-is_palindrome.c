@@ -32,9 +32,11 @@ int p_checker(char *s, char c, int i)
 
 int is_palindrome(char *s)
 {
-	char c = " ";
+	char c;
 
 	if (*s == '\0')
 		return (1);
+
+	c = "";
 	return (p_checker(s, c, 1));
 }
