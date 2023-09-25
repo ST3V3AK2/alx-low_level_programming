@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - computes the squareroot of n
+ * _sqrt - computes the squareroot of n
  * @x: input number
  * @y: first guess of the square root
  *
