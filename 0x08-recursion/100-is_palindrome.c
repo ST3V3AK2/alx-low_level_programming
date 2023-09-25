@@ -17,7 +17,7 @@ int p_checker(char *s,  int i)
 		return (0);
 	if (len / 2 == i)
 		return (1);
-	return (p_checker(s + 1, c, i + 1));
+	return (p_checker(s + 1, i + 1));
 }
 
 /**
