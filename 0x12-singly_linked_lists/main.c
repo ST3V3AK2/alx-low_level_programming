@@ -8,18 +8,6 @@
 
 int main(void)
 {
-	list_t *head;
-
-	head = NULL;
-	add_node_end(&head, "Alexandro");
-	add_node_end(&head, "Asaia");
-	add_node_end(&head, "Augustin");
-	add_node_end(&head, "Bennett");
-	add_node_end(&head, "Bilal");
-	add_node_end(&head, "Chandler");
-	add_node_end(&head, "Damian");
-	add_node_end(&head, "Daniel");
-	add_node_end(&head, "Dora");
-	print_list(head);
+	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
 	return (0);
 }

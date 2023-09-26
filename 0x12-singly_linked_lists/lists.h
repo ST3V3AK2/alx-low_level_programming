@@ -7,7 +7,7 @@
 #include <stddef.h>
 
 /**
- * struct list_s = singly linked list
+ * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to th next node
@@ -30,4 +30,5 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
+int bootup(void) __attribute__((construtor));
 #endif
