@@ -1,18 +1,26 @@
 #include "function_pointers.h"
 
 /**
- * @ int_index - retuns the addres of the first element sported in a list
+ * @int_index - searches for the first element of an integer in an array
  * @array: input list
  * @size: size of the array
- * @action input function to be executed
+ * @cmp: compare function
  *
- * Return: Void.
+ * Return: on success, pointer to elements index
+ * on error, -1.
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, void (*cmp)(int))
 {
-	int i;
+	int i, n;
 
+	if (size <= 0)
+		return (-1);
 	for (i = 0; i < size; i++)
-		(*action)(array[i]);
+	{
+		n = cmp(array[i]);
+		if (n !`= 0)
+			return (i);
+	}
+	return (-1);
 }
