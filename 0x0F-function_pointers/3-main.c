@@ -23,13 +23,11 @@ int main(int ac, char *argv[])
 	num2 = atoi(argv[3]);
 	if (num2 == 0)
 	{
-		printf("num: %d %d\n", num1, num2);
 		printf("Error\n");
 		exit(100);
 	}
 
 	func = get_op_func(argv[2]);
-	printf("%s\n", argv[2]);
 	if (func == NULL)
 	{
 		printf("Error\n");

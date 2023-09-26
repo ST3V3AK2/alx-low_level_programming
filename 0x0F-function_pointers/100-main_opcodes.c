@@ -26,7 +26,7 @@ int main(int ac, char *argv[])
 	}
 
 	bytes = (char *)main;
-	for(i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		printf("%02hhx", bytes[i]);
 		if (i == n - 1)

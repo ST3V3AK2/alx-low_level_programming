@@ -4,7 +4,7 @@
  * array_iterator - performs a function for all the elements of an array.
  * @array: input list
  * @size: size of the array
- * @action input function to be executed
+ * @action: input function to be executed
  *
  * Return: Void.
  */

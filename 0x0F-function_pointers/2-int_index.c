@@ -10,7 +10,7 @@
  * on error, -1.
  */
 
-int int_index(int *array, int size, void (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i, n;
 
@@ -19,7 +19,7 @@ int int_index(int *array, int size, void (*cmp)(int))
 	for (i = 0; i < size; i++)
 	{
 		n = cmp(array[i]);
-		if (n !`= 0)
+		if (n != 0)
 			return (i);
 	}
 	return (-1);
