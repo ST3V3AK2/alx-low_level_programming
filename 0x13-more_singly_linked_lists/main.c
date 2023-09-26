@@ -27,7 +27,7 @@ int main(void)
 	n = pop_listint(&head);
 	printf("- %d\n", n);
 	print_listint(head);
-	free_listint(head);
-	head = NULL;
+	free_listint2(&head);
+	printf("%p\n", (void *)head);
 	return (0);
 }

@@ -7,7 +7,7 @@
  * Return: void
  */
 
-void free_listinit2(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	nodePtr nextPtr;
 
