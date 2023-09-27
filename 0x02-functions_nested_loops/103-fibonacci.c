@@ -9,14 +9,13 @@
 int main(void)
 {
 	unsigned long int prev, crnt, tmp;
-	unsigned long int sum;
+	float sum;
 	int i;
 
-	prev = 1;
-	crnt = 2;
-	sum = crnt;
+	prev = 0;
+	crnt = 1;
 
-	for (i = 2; i < 4000000; i++)
+	for (i = 0; i <= 4000000; i++)
 	{
 		tmp = prev + crnt;
 		if (tmp % 2 == 0)
@@ -24,7 +23,6 @@ int main(void)
 		prev = crnt;
 		crnt = tmp;
 	}
-	printf("%ld\n", sum);
-	putchar('\n');
+	printf("%.0f\n", sum);
 	return (0);
 }
