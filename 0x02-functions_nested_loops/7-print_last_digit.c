@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * print_last_digit - prints the ladt digit of  a number
@@ -15,6 +16,7 @@ int print_last_digit(int n)
 		n = n * -1;
 
 	l = n % 10;
+	l = abs(l);
 	_putchar('0' + l);
 	return (l);
 }

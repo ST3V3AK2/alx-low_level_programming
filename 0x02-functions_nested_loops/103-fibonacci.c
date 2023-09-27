@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	unsigned int prev, crnt, tmp;
-	unsigned int i, sum;
+	unsigned long int prev, crnt, tmp;
+	unsigned long int sum;
+	int i;
 
 	prev = 1;
 	crnt = 2;

@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int prev, crnt, tmp;
+	unsigned int prev, crnt, tmp;
 	int i;
 
 	prev = 1;

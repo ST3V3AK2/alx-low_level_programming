@@ -17,17 +17,16 @@ void print_times_table(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		putchar('0');
-		for (j = 1; j <= n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			mul = i * j;
-			if (mul > 100)
+			if (mul >= 100)
 			{
 				tmp = mul % 100;
 				_putchar('0' + mul / 100);
 				_putchar('0' + tmp / 10);
 			}
-			else
+			else if (mul > 0 && mul < 100)
 			{
 				_putchar(' ');
 				if (mul > 9)

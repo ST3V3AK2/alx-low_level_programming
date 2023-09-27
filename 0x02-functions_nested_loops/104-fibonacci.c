@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - prints the first 50 fibonnaci numbers
+ * main - prints the first 98 fibonnaci numbers
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	unsigned int prev, crnt, tmp;
+	unsigned long int prev, crnt, tmp;
 	int i;
 
 	prev = 1;
