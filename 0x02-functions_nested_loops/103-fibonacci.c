@@ -8,13 +8,12 @@
 
 int main(void)
 {
-	int prev, crnt, tmp;
+	unsigned int prev, crnt, tmp;
 	unsigned int i, sum;
 
 	prev = 1;
 	crnt = 2;
 	sum = crnt;
-	printf("%d, %d", prev, crnt);
 
 	for (i = 2; i < 4000000; i++)
 	{
@@ -24,6 +23,7 @@ int main(void)
 		prev = crnt;
 		crnt = tmp;
 	}
+	printf("%d\n", sum);
 	putchar('\n');
 	return (0);
 }

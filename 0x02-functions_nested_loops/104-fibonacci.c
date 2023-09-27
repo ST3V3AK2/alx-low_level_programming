@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	int prev, crnt, tmp;
+	unsigned int prev, crnt, tmp;
 	int i;
 
 	prev = 1;
 	crnt = 2;
-	printf("%d, %d", prev, crnt);
+	printf("%d, %d, ", prev, crnt);
 
 	for (i = 2; i < 98; i++)
 	{

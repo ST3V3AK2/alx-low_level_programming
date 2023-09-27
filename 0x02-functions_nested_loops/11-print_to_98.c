@@ -25,7 +25,7 @@ void separator(int n)
 
 void print_to_98(int n)
 {
-	int n;
+	int i, j;
 
 	if (n > 98)
 	{
