@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Print _putchar
+ * print_alphabet - prints all the letters of the alphabet in lowercase
  *
  * Return: Always 0 (Success)
  */
 
-voi print_alphabet(void)
+void print_alphabet(void)
 {
 	int i = 97;
 
