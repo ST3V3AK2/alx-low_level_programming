@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned int prev, crnt, tmp;
+	unsigned long int prev, crnt, tmp;
 	int i;
 
 	prev = 1;
@@ -18,7 +18,7 @@ int main(void)
 	for (i = 2; i < 50; i++)
 	{
 		tmp = prev + crnt;
-		printf("%d", tmp);
+		printf("%ld", tmp);
 		if (i < 50 - 1)
 			printf(", ");
 

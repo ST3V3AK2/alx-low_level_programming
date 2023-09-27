@@ -18,7 +18,7 @@ int main(void)
 	for (i = 2; i < 98; i++)
 	{
 		tmp = prev + crnt;
-		printf("%d", tmp);
+		printf("%ld", tmp);
 		if (i < 98 - 1)
 			printf(", ");
 

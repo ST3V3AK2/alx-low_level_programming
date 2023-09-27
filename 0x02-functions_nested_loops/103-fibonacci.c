@@ -24,7 +24,7 @@ int main(void)
 		prev = crnt;
 		crnt = tmp;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	putchar('\n');
 	return (0);
 }
