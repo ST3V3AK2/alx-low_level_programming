@@ -14,8 +14,8 @@ int main(void)
 
 	prev = 0;
 	crnt = 1;
-
-	for (i = 0; i <= 4000000; i++)
+	tmp = 0;
+	for (i = 0; tmp <= 4000000; i++)
 	{
 		tmp = prev + crnt;
 		if (tmp % 2 == 0)
