@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * sum_listint - sums all the elements in a linked list
@@ -12,12 +12,12 @@ int sum_listint(listint_t *head)
 {
 	int sum = 0, i;
 
-	if (!head && head != NULL)
+	if (head != NULL)
 	{
-		for (i = 0; *head != NULL; i++)
+		for (i = 0; head != NULL; i++)
 		{
-			sum += (*head)->n;
-			*head = (*head)->next;
+			sum += head->n;
+			head = head->next;
 		}
 	}
 	return (sum);

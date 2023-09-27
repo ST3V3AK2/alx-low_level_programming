@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * get_nodeint_at_index - finds a node at a particular index
@@ -14,7 +14,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	nodePtr idx;
 	unsigned int i;
 
-	if (head == NULL || index < 0)
+	if (head == NULL)
 		return (NULL);
 
 	i = 0;
