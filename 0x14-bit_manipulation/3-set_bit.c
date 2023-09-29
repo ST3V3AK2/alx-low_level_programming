@@ -11,7 +11,6 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int num = 0;
 	unsigned int i, j, p;
 
 	for (i = 0; i < index; i++)
@@ -24,7 +23,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		}
 		else
 		{
-			n | p;
+			n |= p;
 		}
 	}
 	return (1);

@@ -9,22 +9,23 @@
  * on error, -1
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int num = 0;
 	unsigned int i, j, p;
 
 	for (i = 0; i < index; i++)
 	{
-		if (i != index - 1)
+		if (i != index - 2)
 		{
 			p = 1;
 			for (j = 0; j < i; j++)
 				p *= 2;
+			num += p;
 		}
 		else
 		{
-			n | p;
+			n |= num;
 		}
 	}
 	return (1);
