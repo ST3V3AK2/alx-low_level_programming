@@ -7,9 +7,9 @@
  * Return: 2 ^ y
  */
 
-unsigned int _pow2(int y)
+unsigned int _pow2(size_t y)
 {
-	int i, sq;
+	size_t i, sq;
 
 	sq = 1;
 	for (i = 0; i < y; i++)
@@ -27,20 +27,20 @@ unsigned int _pow2(int y)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int base2 = 0;
-	int n = 0, i;
+	int n = 0, base2 = 0, i, j;
 
 	if (b == NULL)
 		return (0);
 
-
-	for (i = 0; i < strlen(b); i++)
+	j = 0;
+	for (i = strlen(b) - 1; i >= 0; i--)
 	{
-		if (b[i] != '0' || b[i] != '1')
-			return (NULL);
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 
-		n = '0' - 30;
-		base2 += n * _pow2(i);
+		n = b[i] - 48;
+		base2 += n * _pow2(j);
+		j++;
 	}
 	return (base2);
 }

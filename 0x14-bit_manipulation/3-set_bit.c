@@ -11,19 +11,22 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int i, j, p;
+	int i, j, k;
+	size_t p;
 
-	for (i = 0; i < index; i++)
+	k = 1;
+	p = 1;
+	for (i = index; i >= 0; i--)
 	{
-		if (i != index - 1)
-		{
-			p = 1;
-			for (j = 0; j < i; j++)
+		if (i != 0)
+		{	p = 1;
+			for (j = 0; j < k; j++)
 				p *= 2;
+			k++;
 		}
 		else
 		{
-			n |= p;
+			*n |= p;
 		}
 	}
 	return (1);

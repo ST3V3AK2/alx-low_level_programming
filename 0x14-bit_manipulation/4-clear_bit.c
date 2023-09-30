@@ -11,21 +11,22 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int num = 0;
-	unsigned int i, j, p;
+	int i, j, k, p;
 
-	for (i = 0; i < index; i++)
+	k = 1;
+	p = 1;
+	for (i = index; i >= 0; i--)
 	{
-		if (i != index - 2)
+		if (i != 0)
 		{
 			p = 1;
-			for (j = 0; j < i; j++)
+			for (j = 0; j < k; j++)
 				p *= 2;
-			num += p;
+			k++;
 		}
 		else
 		{
-			n |= num;
+			*n -= p;
 		}
 	}
 	return (1);
