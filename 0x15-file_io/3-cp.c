@@ -55,7 +55,7 @@ int main(int ac, char *av[])
 
 	file_from = open(av[1], O_RDONLY);
 
-	if (file_to == NULL)
+	if (av[2] == NULL)
 		exit(1);
 	file_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
