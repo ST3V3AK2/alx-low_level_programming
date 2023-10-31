@@ -17,13 +17,13 @@ int rdwr2file(int file_from, int file_to, char **av)
 	size_t count = 1024;
 
 	num_rd = read(file_from, &buf, count);
-	if (num_rd == -1)
+	if (errno == EACCES || num_rd == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 	num_wr = write(file_to, &buf, num_rd);
-	if (num_wr == -1)
+	if (errno == EACCES || num_wr == -1)
 	{
 		dprintf(2, "Error: Can't write to  file %s\n", av[2]);
 		exit(99);
